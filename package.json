@@ -1,0 +1,29 @@
+{
+  "name": "teste-frontend-vtex",
+  "version": "1.0.0",
+  "description": "contact list - CRUD",
+  "main": "index.js",
+  "repository": "https://github.com/pgThiago/teste-frontend-vtex.git",
+  "author": "Thiago Silva <thiago25pro@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "webpack": "webpack",
+    "serve": "webpack serve --open"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.6",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "css-loader": "^6.0.0",
+    "eslint": "^7.30.0",
+    "jquery": "^3.6.0",
+    "sass": "^1.35.2",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.1.0",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.5",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
