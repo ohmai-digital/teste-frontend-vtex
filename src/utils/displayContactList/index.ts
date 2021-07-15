@@ -21,14 +21,11 @@ export function displayContactList(contacts: ContactType[]) {
   }
 
   if (contacts?.length === 0) {
-    contactList.html("Nenhum contato encontrado 🧐");
-    contactList.css({
-      color: "rgba(5, 150, 105)",
-      "font-size": "20px",
-      "text-align": "center",
-    });
+    contactList.text("");
+    $("#not-found").show();
   } else {
-    contactList.html("");
+    $("#not-found").hide();
+    contactList.text("");
     contacts?.forEach((contact: ContactType) => {
       contactList.append(`<ul>
 				<li>${contact._id}</li>

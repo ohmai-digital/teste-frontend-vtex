@@ -6,6 +6,10 @@
   "repository": "https://github.com/pgThiago/teste-frontend-vtex.git",
   "author": "Thiago Silva <thiago25pro@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "webpack": "webpack",
+    "serve": "webpack serve --open"
+  },
   "devDependencies": {
     "@types/jquery": "^3.5.6",
     "@typescript-eslint/eslint-plugin": "^4.28.3",
