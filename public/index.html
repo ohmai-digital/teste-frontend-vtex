@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png" />
+
+    <title>Meus contatos</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="jquery-mask/jquery.mask.js"></script>
+    <script type="module" src="./bundle.js"></script>
+  </head>
+  <body>
+    <span class="loading"> </span>
+    <main class="container">
+      <div id="logo">
+        <img
+          src="https://fontmeme.com/permalink/210714/57143908371f143437f1034fd252cca3.png"
+          alt="ícone de contatos"
+        />
+      </div>
+      <div id="input-container">
+        <span id="total-of-contacts"></span>
+        <input id="search-input" type="search" placeholder="Buscar contato" />
+      </div>
+      <div class="table-header">
+        <ul>
+          <li>ID</li>
+          <li>Nome</li>
+          <li>Telefone</li>
+          <li>E-mail</li>
+          <li>
+            <button id="show-modal-btn">Adicionar</button>
+          </li>
+        </ul>
+      </div>
+      <div class="table-body"></div>
+      <div id="modal">
+        <button type="button" value="false" id="close-btn">X</button>
+        <form id="form">
+          <label for="name">Primeiro e último nome:</label>
+          <input
+            name="name"
+            id="name"
+            type="text"
+            placeholder="Digite aqui"
+            minlength="3"
+            autocomplete="off"
+          />
+          <span class="name-error error"></span>
+
+          <label for="phone">Telefone:</label>
+          <input
+            name="phone"
+            id="phone"
+            type="phone"
+            placeholder="Digite aqui"
+            minlength="15"
+            maxlength="15"
+            autocomplete="off"
+          />
+          <span class="phone-error error"></span>
+
+          <label for="email">E-mail:</label>
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Digite aqui"
+            minlength="6"
+            autocomplete="off"
+          />
+          <span class="email-error error"></span>
+
+          <span id="status-message"></span>
+          <button type="submit">Salvar</button>
+        </form>
+      </div>
+
+      <div id="confirm-delete-modal">
+        <span>Atenção ❌</span>
+        <span id="confirm-text"></span>
+        <div class="confirm-buttons">
+          <button type="button" id="no">Não</button>
+          <button type="button" id="yes">Sim</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
